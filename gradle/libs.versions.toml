@@ -1,0 +1,39 @@
+[versions]
+gradle = "8.7.3"
+kotlin = "2.0.0"
+coreKtx = "1.15.0"
+junit = "4.13.2"
+junitVersion = "1.2.1"
+espressoCore = "3.6.1"
+appcompat = "1.7.0"
+material = "1.12.0"
+androidxComposeCompiler = "1.5.15"
+
+activityCompose = "1.10.1"
+composeBom = "2025.03.01"
+
+[libraries]
+gradlePlugin = { group = "com.android.tools.build",name="gradle", version.ref = "gradle" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+
+androidx-compose-compiler = {group = "androidx.compose.compiler",name="compiler",version.ref = "androidxComposeCompiler"}
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom-alpha", version.ref = "composeBom" }
+androidx-compose-foundation = {module = "androidx.compose.foundation:foundation"}
+androidx-compose-material3 = {module = "androidx.compose.material3:material3"}
+androidx-compose-test-manifest = {module = "androidx.compose.ui:ui-test-manifest"}
+androidx-compose-tooling = {module = "androidx.compose.ui:ui-tooling"}
+androidx-compose-tooling-preview = {module = "androidx.compose.ui:ui-tooling-preview"}
+androidx-compose-material-icons = {module = "androidx.compose.material:material-icons-extended"}
+androidx-compose-ui-test-junit = {module = "androidx.compose.ui:ui-test-junit4"}
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "gradle" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+
